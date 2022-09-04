@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.produtos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+}
+.produto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.imagem-produto{
+    width: 250px;
+}
+
+
