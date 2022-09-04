@@ -8,11 +8,9 @@ use App\Queries\Product;
 
 $conn = new Connection;
 
+$produtos = new Product($conn);
 
-$pro = new Product($conn);
+$produtosDados = $produtos->getAllProducts();
 
-$pro = $pro->getAllProducts();
+require 'public/Page/home.php';
 
-echo '<pre>';
-print_r($pro);
-echo '</pre>';exit;

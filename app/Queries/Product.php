@@ -8,7 +8,7 @@ class Product extends Connection
 {
     public function getAllProducts()
     {
-        $query = Connection::connectionDatabase()->prepare('SELECT produtos.NOME, produtos.VALOR, produtos.DESCRICAO, produtos.CATEGORIA, categoria.CATEGORIA 
+        $query = Connection::connectionDatabase()->prepare('SELECT produtos.NOME, produtos.VALOR, produtos.DESCRICAO, produtos.CATEGORIA, produtos.IMAGEM, categoria.CATEGORIA 
                                                             FROM produtos 
                                                             INNER JOIN categoria
                                                             ON produtos.CATEGORIA = categoria.ID');
