@@ -1,4 +1,4 @@
-CREATE DATABASE bloco-de-produtos;
+CREATE DATABASE bloco_de_deprodutos;
 
 CREATE TABLE PRODUTOS
 (
