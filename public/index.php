@@ -1,7 +1,7 @@
 <?php
-require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
-App\VariaviesDeAmbiente\Variaveis::load(__DIR__);
+App\VariaviesDeAmbiente\Variaveis::load(__DIR__ . '/../');
 
 use App\Database\Connection;
 use App\Queries\Product;
@@ -12,5 +12,5 @@ $produtos = new Product($conn);
 
 $produtosDados = $produtos->getAllProducts();
 
-require 'public/Page/home.php';
+require 'pages/home.php';
 
